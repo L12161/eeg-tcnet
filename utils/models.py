@@ -22,7 +22,11 @@
 from keras.models import Model
 from keras.layers.core import Dense, Activation
 from keras.layers.convolutional import Conv1D,Conv2D, AveragePooling2D,SeparableConv2D
-from keras.layers.normalization import BatchNormalization
+from tensorflow.keras.models import Sequential
+from tensorflow.keras.layers import (
+    BatchNormalization, SeparableConv2D, MaxPooling2D, Activation, Flatten, Dropout, Dense
+)
+from tensorflow.keras import backend as K
 from keras.layers import Dropout, Add, Lambda,DepthwiseConv2D,Input, Permute
 from tensorflow.keras.constraints import max_norm
 
